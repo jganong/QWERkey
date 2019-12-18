@@ -8,12 +8,12 @@ To install this project, but the scripts kb and bk somewhere in your path.
 
 To activate it, run "kb".  To deactivate it, run "bk".
 
-All the keys should keep working as they normally do without kb,
+All the keys (except CapsLock) keep working as they normally do without kb,
 plus have some additional capabilities:
 
 The spacebar acts as a Control key when you hold it down.
 
-The CapsLock key now emits Enter when you tap it, and when 
+The CapsLock no longer works to lock the caps. It now emits Enter when you tap it, and when 
 you hold down it down, it activates a new modifier I am calling CHARM.
 When CHARM is in effect, it activates a layer where many movement keys are on the right hand.
 
