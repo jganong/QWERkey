@@ -1,0 +1,35 @@
+criteria to check on new revisions, make sure:
+
+   : works in qutebrowser
+   ; works in matlab (when it is bound to the same key as Ret matlab sees it as 'Ret ;'
+   ctrl-shift-z works in inkscape as redo (sometimes inkscape does not see the shift and you get undo)
+   'ctrl-/ Ret' starts a new terminal in xmonad
+
+consider moving away from xmodmap because
+it is sooo confusing, and becasue it does not work with
+wayland.
+also using a low level hack cam make it work
+with X11, wayland, and the bare console all in one go
+this might solve a bunch of my problems,
+such as xmonad not recognizing qwerky numbers,
+or x2goclient ignoring qwerkey.
+
+here are two possible ways to do this:
+
+https://gitlab.com/interception/linux/tools
+has a space2 meta plugin already probably easy to modify
+to space2control
+
+http://welz.org.za/projects/mxk
+has a good tutorial
+works with joy sticks, trackpads, etc
+so might be good for adaptive gaming
+
+
+pretty good online keyboard editor (but save to .svg does does not make a good image file)
+http://www.keyboard-layout-editor.com
+my layout is saved in the file keyboard-layout.json
+note that github.com is not letting me login,
+and if you go to the RawData, the Upload JSON button appears to work
+
+

@@ -1,0 +1,3 @@
+pkill -x xcape  # don't have multiple xcape running!
+
+setxkbmap -layout 'us(intl)' # RESET for clean slate!!
