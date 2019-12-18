@@ -28,8 +28,10 @@ so might be good for adaptive gaming
 
 pretty good online keyboard editor (but save to .svg does does not make a good image file)
 http://www.keyboard-layout-editor.com
-my layout is saved in the file keyboard-layout.json
+my layout is saved in the file keyboard-layout.json.
+i edit this with "gvim keyboard-layout.json", and do select-all and copy.
 note that github.com is not letting me login,
-and if you go to the RawData, the Upload JSON button appears to work
+and if you go to the RawData, you can select-all and then paste your text in.
+
 
 
