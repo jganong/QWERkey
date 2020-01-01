@@ -28,7 +28,7 @@
       "a": 0,
       "w": 1.5
     },
-    "BackTab\n\n\n\n\n+Shift=FN\nTab\n\n\n\nSymbol",
+    "BackTab\n\n\n\n\n+Shift:FN\nTab\n\n\n\nSymbol",
     {
       "c": "#ffffff",
       "t": "#000000",
@@ -76,7 +76,7 @@
       "a": 0,
       "w": 1.75
     },
-    "\n\n\n\n+Shft=Number\n\nEnter\n\n\n\nMovement",
+    "\n\n\n\n+Shift:Number\n\nEnter\n\n\n\nMovement",
     {
       "c": "#ffffff",
       "t": "#000000",
