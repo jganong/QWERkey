@@ -26,12 +26,19 @@ works with joy sticks, trackpads, etc
 so might be good for adaptive gaming
 
 
-pretty good online keyboard editor (but save to .svg does does not make a good image file)
+pretty good online keyboard editor
 http://www.keyboard-layout-editor.com
-my layout is saved in the file keyboard-layout.json.
-i edit this with "gvim keyboard-layout.json", and do select-all and copy.
-note that github.com is not letting me login,
-and if you go to the RawData, you can select-all and then paste your text in.
+"Download SVG (Experimental)" does does not make a good file,
+but "Download PNG (Experimental) works fine.
+When you want to revise an existing .JSON layout,
+in the RawData Tab you can "Upload JSON"
+and that works quickly and reliably.  Other methods like
+copy & paste sometimes do not seem to have any effect.
+Click on the Properties Tab to get out of the RawData tab
+and go back to editing individual keys.
 
 
-
+# jargon for key menomics
+http://www.codejacked.com/know-your-keyboard-bang-splat-whack/
+https://blog.codinghorror.com/ascii-pronunciation-rules-for-programmers/
+http://ascii-table.com/pronunciation-guide.php
