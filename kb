@@ -115,9 +115,9 @@ if [ -n "$help" ] ; then
 echo '
 usage:
    kb start # enable kb silently
-   kb stop # diable kb silently
+   kb stop # disable kb silently
    kb help # print this message
-   kb # disable kb, as a failsafe measure if your keyboard is crazy & print this message
+   kb # disable kb, as a failsafe measure if your keyboard is crazy or you are confused & print this message
 ' >&2
 fi
 
