@@ -1,6 +1,6 @@
 # QWERkey Keyboard Layout
 
-This is a shiny new version of QWERKey forked from (https://github.com/jganong/QWERkey.git)
+This is a shiny new version of QWERKey forked from (https://github.com/MicahElliott/QWERkey)
 You might want to read the README.md there because I am only going a mention a few changes here.
 ![keymap diagram](https://github.com/jganong/QWERkey/blob/master/keyboard-layout.png)
 
