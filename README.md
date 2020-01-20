@@ -4,9 +4,9 @@ This is a shiny new version of QWERKey forked from (https://github.com/MicahElli
 You might want to read the README.md there because I am only going a mention a few changes here.
 ![keymap diagram](https://github.com/jganong/QWERkey/blob/master/keyboard-layout.png)
 
-To install this project, but the scripts kb and bk somewhere in your path.
+To install this project, put the script "kb" into any directory in your PATH.
 
-To activate it, run "kb".  To deactivate it, run "bk".
+To activate it, run "kb start".  To deactivate it, run "kb" with no arguments.
 
 All the keys (except CapsLock) keep working as they normally do without kb,
 plus have some additional capabilities:
