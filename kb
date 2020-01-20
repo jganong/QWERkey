@@ -9,10 +9,21 @@
 #
 # BONUS! this seems fine to work with matlab -- Caps_Lock when tapped makes enter, and also works as a modifier, unlike ';'
  
-pkill -x xcape  # don't have multiple xcape running!
 
-setxkbmap -layout 'us(intl)' # RESET for clean slate!!
 
+case "$1" in
+    stop) stop=1 ;;
+    start) start=1 ;;
+    help) help=1 ;;
+    *) help=1 ; stop=1 ;;
+esac
+
+if [ -n "$stop"  ] ; then
+   pkill -x xcape  # don't have multiple xcape running!
+   setxkbmap -layout 'us(intl)' # RESET for clean slate!!
+fi
+
+if [ -n "$start" ] ; then  
 xmodmap - <<hereDoc
 
 ! ! ! unmodified shift qwrk Shift-qwrk charm Shift-charm
@@ -55,9 +66,7 @@ keycode 62 = Shift_R Shift_R NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 8 = Tab NoSymbol Tab NoSymbol NoSymbol NoSymbol
 keycode 47 = semicolon colon percent NoSymbol BackSpace NoSymbol
 remove lock = Caps_Lock 
-
 hereDoc
-
 
 anykey=255
 tapifier() {
@@ -100,4 +109,16 @@ tapifier Shift_L 50 Shift Escape
 tapifier Shift_R 49 Shift grave asciitilde
 
 tapifier ISO_Level3_Shift 66 mod5 Return
+fi
+
+if [ -n "$help" ] ; then
+echo '
+usage:
+   kb start # enable kb silently
+   kb stop # diable kb silently
+   kb help # print this message
+   kb # disable kb, as a failsafe measure if your keyboard is crazy & print this message
+' >&2
+fi
+
 
