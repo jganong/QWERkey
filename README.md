@@ -1,4 +1,4 @@
-# QWERkey Keyboard Layout
+# Baklava Keyboard Layout with Yummy Layers
 
 This is a shiny new version of QWERKey forked from (https://github.com/MicahElliott/QWERkey)
 You might want to read the README.md there because I am only going a mention a few changes here.
@@ -6,7 +6,7 @@ You might want to read the README.md there because I am only going a mention a f
 
 To install this project, put the script "kb" into any directory in your PATH.
 
-To activate it, run "kb start".  To deactivate it, run "kb" with no arguments.
+To activate it, run "baklava start".  To deactivate it, run "baklava" with no arguments.
 
 All the keys (except CapsLock) keep working as they normally do without kb,
 plus have some additional capabilities:

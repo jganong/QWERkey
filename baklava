@@ -114,10 +114,10 @@ fi
 if [ -n "$help" ] ; then
 echo '
 usage:
-   kb start # enable kb silently
-   kb stop # disable kb silently
-   kb help # print this message
-   kb # disable kb, as a failsafe measure if your keyboard is crazy or you are confused & print this message
+   baklava start # enable baklava silently
+   baklava stop # disable baklava silently
+   baklava help # print this message
+   baklava # disable baklava, as a failsafe measure if your keyboard is crazy or you are confused & print this message
 ' >&2
 fi
 
