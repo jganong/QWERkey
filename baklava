@@ -14,6 +14,7 @@
 case "$1" in
     stop) stop=1 ;;
     start) start=1 ;;
+    restart) stop=1 ; start=1 ;;
     help) help=1 ;;
     *) help=1 ; stop=1 ;;
 esac
@@ -114,10 +115,11 @@ fi
 if [ -n "$help" ] ; then
 echo '
 usage:
-   baklava start # enable baklava silently
-   baklava stop # disable baklava silently
+   baklava start # start baklava silently
+   baklava restart # stop baklava silently & then start baklava silently
+   baklava stop # stop baklava silently
    baklava help # print this message
-   baklava # disable baklava, as a failsafe measure if your keyboard is crazy or you are confused & print this message
+   baklava # stop baklava, as failsafe if your keyboard is crazy & print help message
 ' >&2
 fi
 
