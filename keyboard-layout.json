@@ -55,9 +55,9 @@
     },
     "Y\n\n&\n\n0\n\n\nYogi",
     {
-      "t": "#000000\n\n\n\n#880088\n#008888"
+      "t": "#000000\n\n#008800\n\n#880088\n#008888\n\n#008800"
     },
-    "U\n\n\n\n1\nF1",
+    "U\n\n%\n\n1\nF1\n\nchUnk",
     {
       "t": "#000000\n\n#008800\n#ff0000\n#880088\n#008888\n\n#008800"
     },
@@ -92,7 +92,7 @@
       "t": "#000000",
       "a": 4
     },
-    "A",
+    "A\n\n\n\n\n\n\n\n\n\nCtrl",
     "S",
     "D",
     "F",
@@ -112,10 +112,10 @@
     "K\n\n=\nUp\n5\nF5\n\neeKwal",
     "L\n\n|\nRt\n6\nF6\n\nLine",
     {
-      "t": "#000000\n\n#008800\n#ff0000\n\n\n\n#008800",
+      "t": "#000000\n\n\n\n\n\n\n#008800",
       "a": 4
     },
-    ":\n;\n%\nBsp\n\n\n\ndbl.dots",
+    ":\n;\n\n\n\n\n\n\n\n\nCtrl",
     {
       "t": "#000000\n\n#008800\n\n\n\n\n#008800",
       "fa": [
@@ -176,9 +176,9 @@
     },
     "M\n\n$\nPgDn\n7\nF7\n\nMoney",
     {
-      "t": "#000000\n\n\n\n#880088\n#008888"
+      "t": "#000000\n\n\n#ff0000\n#880088\n#008888"
     },
-    "<\n,\n\n\n8\nF8",
+    "<\n,\n\nBsp\n8\nF8",
     {
       "t": "#000000\n\n#008800\n\n#880088\n#008888\n\n#008800",
       "fa": [
@@ -233,7 +233,7 @@
       ],
       "w": 6.25
     },
-    "_ {underscore}\n\n{hyphen} -\n\n\n\nSpace\nbreakers\n\n\nCtrl",
+    "_ {underscore}\n\n{hyphen} -\n\n\n\nSpace\nbreakers",
     {
       "t": "#000000",
       "a": 5,

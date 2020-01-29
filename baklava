@@ -13,7 +13,7 @@
 
 case "$1" in
     stop) stop=1 ;;
-    start) start=1 ;;
+    start) stop=1 ; start=1 ;;
     restart) stop=1 ; start=1 ;;
     help) help=1 ;;
     *) help=1 ; stop=1 ;;
@@ -36,7 +36,7 @@ keycode 26 = e E NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 27 = r R NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 28 = t T NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 29 = y Y ampersand NoSymbol NoSymbol 0
-keycode 30 = u U NoSymbol F1 NoSymbol 1
+keycode 30 = u U percent F1 NoSymbol 1
 keycode 31 = i I asterisk F2 Home 2
 keycode 32 = o O asciitilde F3 End 3
 keycode 33 = p P plus F10 Insert NoSymbol
@@ -60,18 +60,19 @@ keycode 55 = v V NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 56 = b B NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 57 = n N numbersign NoSymbol Prior NoSymbol
 keycode 58 = m M dollar F7 Next 7
-keycode 59 = comma less asciicircum F8 NoSymbol 8
+keycode 59 = comma less NoSymbol F8 BackSpace 8
 keycode 60 = period greater exclam F9 NoSymbol 9
+keycode 65 = space underscore minus
 keycode 62 = Shift_R Shift_R NoSymbol NoSymbol NoSymbol NoSymbol
 !keycode 68 = F2 XF86Switch_VT_2 NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 8 = Tab NoSymbol Tab NoSymbol NoSymbol NoSymbol
-keycode 47 = semicolon colon percent NoSymbol BackSpace NoSymbol
+keycode 47 = semicolon colon NoSymbol NoSymbol NoSymbol NoSymbol
 remove lock = Caps_Lock 
 hereDoc
 
 anykey=255
 tapifier() {
-    ### this is inspired by the example in man xcape : but it assumes
+    ### this is inspired by the example in man xcape
     modkeysym=$1
     keycode=$2
     modifier=$3
@@ -94,13 +95,15 @@ do
 
     xmodmap -e "keycode $anykey = $tapkeysym $extrakeysyms"|| echo -e "\nerror: tapifier $*\nat step: keycode any = $tapkeysym $extrakeysyms"
 done
-    xcape -e "${modkeysym}=${tapkeysym}"
+    xcape -t 1000 -e "${modkeysym}=${tapkeysym}"
     anykey=$(( $anykey -1 ))
 }
 
 tapifier Mode_switch 23 '' Tab 'BackTab'  ### '' is because Mode_switch is a special keysym, not a modifier
 
-tapifier Hyper_L 65 Control space 'underscore minus'
+tapifier Control_L 38 Control a
+tapifier Control_R 47 Control semicolon colon
+# tapifier Hyper_L 65 Control space 'underscore minus'
 
 tapifier Hyper_R 61 Shift slash 'question backslash'
 tapifier Shift_L 50 Shift Escape
