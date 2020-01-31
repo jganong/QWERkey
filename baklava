@@ -13,7 +13,7 @@
 
 case "$1" in
     stop) stop=1 ;;
-    start) start=1 ;;
+    start) stop=1 ; start=1 ;;
     restart) stop=1 ; start=1 ;;
     help) help=1 ;;
     *) help=1 ; stop=1 ;;
