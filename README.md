@@ -24,3 +24,14 @@ Shift-QWRK activates the FN-keys layer.
 
 Shift-CHARM activates the numbers layer.
 
+TO SWITCH TO A VIRTUAL CONSOLE
+
+Enable function keys ( Fn-Esc on my thinkpad lights up a green LED on the Fn
+key)
+
+ctrl+Alt_L F2      or     space+Alt_L+F2
+
+TO GO BACK TO X11
+
+ctrl+Alt_L+F1      or     space+L+Alt_L+F1
+
