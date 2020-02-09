@@ -35,3 +35,11 @@ TO GO BACK TO X11
 
 ctrl+Alt_L+F1      or     space+L+Alt_L+F1
 
+weird thing to note that space+L+Alt_L+F1 works to
+get back from the console, because space is mapped
+to control in X, so why does it work in console?
+i rebooted and it it still works before starting x,
+so i guss it is just a feature of the console.
+it appears that the console switches on alt-FN so the space key is irrelevant in cosole.
+
+
