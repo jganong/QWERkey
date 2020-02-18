@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # wip
 # Caps_Lock key is now ISO_Level3_Shift
 # see example on H key, it can do 6 levels now.
@@ -81,7 +83,7 @@ tapifier() {
 
 for code in $keycode $synonymkeycodes
 do
-    xmodmap -e "keycode $code = $modkeysym" || echo -e "\nerror: tapifier $*\nat step: keycode $code = $modkeysym"
+    xmodmap -e "keycode $code = $modkeysym" || printf "\nerror: tapifier %s\nat step: keycode %s = %s" "$*" "$code" "$modkeysym"
 
     # rather than being surgical, just try to remove all the modifiers from modkeysym, and ignore the fails
     for mod in shift lock control mod1 mod2 mod3 mod4 mod5 ; do
@@ -89,13 +91,13 @@ do
     done
     if [ "$modifier" != "" ]
     then
-       xmodmap -e "add $modifier = $modkeysym"|| echo -e "\nerror: tapifier $*\nat step: add $modifier = $modkeysym"
+        xmodmap -e "add $modifier = $modkeysym" || printf "\nerror: tapifier %s\nat step: add %s = %s" "$*" "$modifier" "$modkeysym"
     fi
 
-    xmodmap -e "keycode $anykey = $tapkeysym $extrakeysyms"|| echo -e "\nerror: tapifier $*\nat step: keycode any = $tapkeysym $extrakeysyms"
+    xmodmap -e "keycode $anykey = $tapkeysym $extrakeysyms"|| printf "\nerror: tapifier %s\nat step: keycode any = %s %s " "$*" "$tapkeysym" "$extrakeysyms"
 done
     xcape -e "${modkeysym}=${tapkeysym}"
-    anykey=$(( $anykey -1 ))
+    anykey=$(( anykey -1 ))
 }
 
 tapifier Mode_switch 23 '' Tab 'BackTab'  ### '' is because Mode_switch is a special keysym, not a modifier
