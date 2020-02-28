@@ -55,6 +55,7 @@ keycode 45 = k K equal F5 Up 5
 keycode 46 = l L bar F6 Right 6
 keycode 48 = apostrophe quotedbl grave NoSymbol NoSymbol NoSymbol
 keycode 50 = Shift_L Shift_L NoSymbol NoSymbol NoSymbol NoSymbol
+keycode 51 = Num_Lock
 keycode 52 = z Z NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 53 = x X NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 54 = c C NoSymbol NoSymbol NoSymbol NoSymbol
@@ -65,6 +66,9 @@ keycode 58 = m M dollar F7 Next 7
 keycode 59 = comma less asciicircum F8 NoSymbol 8
 keycode 60 = period greater exclam F9 NoSymbol 9
 keycode 62 = Shift_R Shift_R NoSymbol NoSymbol NoSymbol NoSymbol
+keycode 64 = Control_L
+keycode 65 = space underscore minus
+keycode 108 = Control_R
 !keycode 68 = F2 XF86Switch_VT_2 NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 8 = Tab NoSymbol Tab NoSymbol NoSymbol NoSymbol
 keycode 47 = semicolon colon percent NoSymbol BackSpace NoSymbol
@@ -102,7 +106,6 @@ done
 
 tapifier Mode_switch 23 '' Tab 'BackTab'  ### '' is because Mode_switch is a special keysym, not a modifier
 
-tapifier Hyper_L 65 Control space 'underscore minus'
 
 tapifier Hyper_R 61 Shift slash 'question backslash'
 tapifier Shift_L 50 Shift Escape
@@ -113,6 +116,13 @@ tapifier Shift_R 49 Shift grave asciitilde
 
 tapifier ISO_Level3_Shift 66 mod5 Return
 fi
+
+set -xv
+xmodmap -e "clear control"
+xmodmap -e "clear mod1"
+xmodmap -e "keycode 64 = Control_L"
+xmodmap -e "keycode 108 = Control_R"
+xmodmap -e "add control = Control_L Control_R"
 
 if [ -n "$help" ] ; then
 echo '
