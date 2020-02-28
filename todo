@@ -1,3 +1,6 @@
+make some kind of feedback, audio, or on screen, indicating when mod-lock and caps-lock take effect
+   xkbset has options to do this i think
+
 criteria to check on new revisions, make sure:
 
    : works in qutebrowser

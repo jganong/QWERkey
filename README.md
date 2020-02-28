@@ -8,10 +8,9 @@ To install this project, put the script "kb" into any directory in your PATH.
 
 To activate it, run "baklava start".  To deactivate it, run "baklava" with no arguments.
 
-All the keys (except CapsLock) keep working as they normally do without kb,
-plus have some additional capabilities:
+All the keys (except CapsLock and Alt) keep working as they normally do without kb.
 
-The spacebar acts as a Control key when you hold it down.
+The Alt keys act as Control keys.
 
 The CapsLock no longer works to lock the caps. It now emits Enter when you tap it, and when 
 you hold down it down, it activates a new modifier I am calling CHARM.
@@ -41,5 +40,4 @@ to control in X, so why does it work in console?
 i rebooted and it it still works before starting x,
 so i guss it is just a feature of the console.
 it appears that the console switches on alt-FN so the space key is irrelevant in cosole.
-
 
