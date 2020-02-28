@@ -70,6 +70,7 @@ keycode 57 = n N numbersign NoSymbol Prior NoSymbol
 keycode 58 = m M dollar F7 Next 7
 keycode 59 = comma less asciicircum F8 NoSymbol 8
 keycode 60 = period greater exclam F9 NoSymbol 9
+keycode 61 = slash question backslash
 keycode 62 = Shift_R Shift_R NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 64 = Control_L
 keycode 65 = space underscore minus
