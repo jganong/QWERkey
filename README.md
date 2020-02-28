@@ -1,5 +1,7 @@
 # Baklava Keyboard Layout with Yummy Layers
 
+i did not make a binding for Escape, because you can do Ctrl-[ to get Escape, or Ctrl-C in vim
+
 This is a shiny new version of QWERKey forked from (https://github.com/MicahElliott/QWERkey)
 You might want to read the README.md there because I am only going a mention a few changes here.
 ![keymap diagram](https://github.com/jganong/QWERkey/blob/master/keyboard-layout.png)
