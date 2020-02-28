@@ -29,6 +29,7 @@ fi
 if [ -n "$start" ] ; then  
 
 
+xkbset -b r rate 660 40 perkeyrepeat 00ff7fffdffff99ff8dfffefffedffff9ffffffffffffffffff7ffffffffffff -m 1 ma 160 40 30 30 500 -a st -twokey latchlock -sl 300 -bo 300 -f dumbbell -led feature slowwarn slowpress slowaccept -slowreject -slowrelease bouncereject stickybeep -ov1 -ov2 groupswrap wrap 1 ignoregrouplock nullify -shift -lock -control -mod1 -mod2 -mod3 -mod4 -mod5 ignorelock -shift -lock -control -mod1 -mod2 -mod3 -mod4 -mod5
 
 
 xmodmap - <<hereDoc
@@ -59,7 +60,7 @@ keycode 45 = k K equal F5 Up 5
 keycode 46 = l L bar F6 Right 6
 keycode 48 = apostrophe quotedbl grave NoSymbol NoSymbol NoSymbol
 keycode 50 = Shift_L Shift_L NoSymbol NoSymbol NoSymbol NoSymbol
-keycode 51 = Num_Lock
+keycode 51 = Alt_L
 keycode 52 = z Z NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 53 = x X NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 54 = c C NoSymbol NoSymbol NoSymbol NoSymbol
@@ -111,12 +112,12 @@ done
 tapifier Mode_switch 23 '' Tab 'BackTab'  ### '' is because Mode_switch is a special keysym, not a modifier
 
 
-tapifier Hyper_R 61 Shift slash 'question backslash'
-tapifier Shift_L 50 Shift Escape
+### tapifier Hyper_R 61 Shift slash 'question backslash'
+### tapifier Shift_L 50 Shift Escape
 # physical Shift_R still works as plain shift without next line
 # tapifier Shift_R 62 Shift BackSpace
 # this allows use of Shiht_R for tilde key
-tapifier Shift_R 49 Shift grave asciitilde
+### tapifier Shift_R 49 Shift grave asciitilde
 
 tapifier ISO_Level3_Shift 66 mod5 Return
 fi
