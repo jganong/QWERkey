@@ -31,7 +31,7 @@ if [ -n "$start" ] ; then
 
 xkbset -bell -feedback sticky -twokey latchlock
 xkbset exp 64 '=sticky' '=twokey' '=latchlock'
-xkbset ignorelock control
+###xkbset ignorelock control
 
 
 xmodmap - <<hereDoc
