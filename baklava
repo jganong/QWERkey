@@ -36,42 +36,43 @@ xkbset exp 64 '=sticky' '=twokey' '=latchlock'
 
 xmodmap - <<hereDoc
 
-! ! !        unmodified   shift      Symbol      Shift-Symbol     Movement    Shift-Movement
-! ! !        lowercase    uppercase  printable   function-keys    movement    numbers
-! !_!        ----------   ---------  ---------   -------------    --------    --------------
+! ! !        unmodified   shift      Symbol          Shift-Symbol
+! ! !        lowercase    uppercase  printable       movement
+! !_!        ----------   ---------  ---------       --------
 keycode 23 = Tab          BackTab    asciitilde
-keycode 24 = q            Q      
-keycode 25 = w            W      
-keycode 26 = e            E      
-keycode 27 = r            R      
-keycode 28 = t            T      
-keycode 29 = y            Y          ampersand   NoSymbol         NoSymbol    0
-keycode 30 = u            U          NoSymbol    F1               NoSymbol    1
-keycode 31 = i            I          asterisk    F2               Home        2
-keycode 32 = o            O          asciitilde  F3               End         3
-keycode 33 = p            P          plus        F10              Insert
-keycode 34 = bracketleft  braceleft  parenleft   F11              Delete
-keycode 35 = bracketright braceright parenright  F12
+keycode 24 = q            Q
+keycode 25 = w            W
+keycode 26 = e            E
+keycode 27 = r            R
+keycode 28 = t            T
+keycode 29 = y            Y          ampersand
+keycode 30 = u            U          NoSymbol
+keycode 31 = i            I          asterisk        Home
+keycode 32 = o            O          asciitilde      End
+keycode 33 = p            P          plus            Insert
+keycode 34 = bracketleft  braceleft  parenleft       Delete
+keycode 35 = bracketright braceright parenright
 keycode 38 = a            A
 keycode 39 = s            S
 keycode 40 = d            D
 keycode 41 = f            F
 keycode 42 = g            G
-keycode 43 = h            H          asciicircum F5               Left
-keycode 44 = j            J          at          F4               Down        4
-keycode 45 = k            K          equal       F5               Up          5
-keycode 46 = l            L          bar         F6               Right       6
+keycode 43 = h            H          asciicircum     Left
+keycode 44 = j            J          at              Down
+keycode 45 = k            K          equal           Up
+keycode 46 = l            L          bar             Right
 keycode 48 = apostrophe   quotedbl   grave
+keycode 49 = Shift_R
 keycode 50 = Shift_L      Shift_L
 keycode 52 = z            Z
 keycode 53 = x            X
 keycode 54 = c            C
 keycode 55 = v            V
 keycode 56 = b            B
-keycode 57 = n            N          numbersign  NoSymbol         Prior
-keycode 58 = m            M          dollar      F7               Next        7
-keycode 59 = comma        less       asciicircum F8               NoSymbol    8
-keycode 60 = period       greater    exclam      F9               NoSymbol    9
+keycode 57 = n            N          numbersign      Prior
+keycode 58 = m            M          dollar          Next
+keycode 59 = comma        less       asciicircum
+keycode 60 = period       greater    exclam
 keycode 61 = slash        question   backslash
 keycode 62 = Shift_R      Shift_R
 keycode 64 = Control_L
@@ -80,7 +81,7 @@ keycode 66 = Alt_L
 keycode 108 = Control_R
 !keycode 68 = F2          XF86Switch_VT_2
 keycode 8 = Tab           NoSymbol   Tab
-keycode 47 = semicolon    colon      percent     NoSymbol         BackSpace
+keycode 47 = semicolon    colon      percent         BackSpace
 
 remove lock = Caps_Lock
 hereDoc
@@ -117,12 +118,12 @@ done
 tapifier Mode_switch 23 '' Tab 'BackTab'  ### '' is because Mode_switch is a special keysym, not a modifier
 
 
-### tapifier Hyper_R 61 Shift slash 'question backslash'
-### tapifier Shift_L 50 Shift Escape
+tapifier Hyper_R 61 Shift slash 'question backslash'
+tapifier Shift_L 50 Shift Escape
 # physical Shift_R still works as plain shift without next line
 # tapifier Shift_R 62 Shift BackSpace
-# this allows use of Shiht_R for tilde key
-tapifier Shift_R 49 Shift grave asciitilde
+# this allows use of Shift_R for tilde key
+### tapifier Shift_R 49 Shift grave asciitilde
 
 ### temporary experimental
 ### i do not use any layer very much, except the symbol layer
