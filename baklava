@@ -29,7 +29,9 @@ fi
 if [ -n "$start" ] ; then  
 
 
-xkbset -b r rate 660 40 perkeyrepeat 00ff7fffdffff99ff8dfffefffedffff9ffffffffffffffffff7ffffffffffff -m 1 ma 160 40 30 30 500 -a st -twokey latchlock -sl 300 -bo 300 -f dumbbell -led feature slowwarn slowpress slowaccept -slowreject -slowrelease bouncereject stickybeep -ov1 -ov2 groupswrap wrap 1 ignoregrouplock nullify -shift -lock -control -mod1 -mod2 -mod3 -mod4 -mod5 ignorelock -shift -lock -control -mod1 -mod2 -mod3 -mod4 -mod5
+xkbset -bell -feedback sticky -twokey latchlock
+xkbset exp 64 '=sticky' '=twokey' '=latchlock'
+xkbset ignorelock control
 
 
 xmodmap - <<hereDoc
@@ -128,6 +130,8 @@ xmodmap -e "clear mod1"
 xmodmap -e "keycode 64 = Control_L"
 xmodmap -e "keycode 108 = Control_R"
 xmodmap -e "add control = Control_L Control_R"
+
+tapifier Control_L 64 control Return 108
 
 if [ -n "$help" ] ; then
 echo '
