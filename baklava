@@ -62,7 +62,6 @@ keycode 45 = k K equal F5 Up 5
 keycode 46 = l L bar F6 Right 6
 keycode 48 = apostrophe quotedbl grave NoSymbol NoSymbol NoSymbol
 keycode 50 = Shift_L Shift_L NoSymbol NoSymbol NoSymbol NoSymbol
-keycode 51 = Alt_L
 keycode 52 = z Z NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 53 = x X NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 54 = c C NoSymbol NoSymbol NoSymbol NoSymbol
@@ -76,6 +75,7 @@ keycode 61 = slash question backslash
 keycode 62 = Shift_R Shift_R NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 64 = Control_L
 keycode 65 = space underscore minus
+keycode 66 = Alt_L
 keycode 108 = Control_R
 !keycode 68 = F2 XF86Switch_VT_2 NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 8 = Tab NoSymbol Tab NoSymbol NoSymbol NoSymbol
@@ -122,7 +122,9 @@ tapifier Mode_switch 23 '' Tab 'BackTab'  ### '' is because Mode_switch is a spe
 # this allows use of Shiht_R for tilde key
 ### tapifier Shift_R 49 Shift grave asciitilde
 
-tapifier ISO_Level3_Shift 66 mod5 Return
+### temporary experimental
+### i do not use any layer very much, except the symbol layer
+### tapifier ISO_Level3_Shift 66 mod5 Return
 fi
 
 xmodmap -e "clear control"
@@ -130,6 +132,7 @@ xmodmap -e "clear mod1"
 xmodmap -e "keycode 64 = Control_L"
 xmodmap -e "keycode 108 = Control_R"
 xmodmap -e "add control = Control_L Control_R"
+xmodmap -e "add mod1 = Alt_L"
 
 tapifier Control_L 64 control Return 108
 
