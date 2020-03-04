@@ -61,6 +61,8 @@ keycode 44 = j J at F4 Down 4
 keycode 45 = k K equal F5 Up 5
 keycode 46 = l L bar F6 Right 6
 keycode 48 = apostrophe quotedbl grave NoSymbol NoSymbol NoSymbol
+! intl keyboard appears to set this one to deadgrave, which you have to hit twice, yuck
+keycode 49 = grave asciitilde
 keycode 50 = Shift_L Shift_L NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 52 = z Z NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 53 = x X NoSymbol NoSymbol NoSymbol NoSymbol
@@ -125,7 +127,6 @@ tapifier Mode_switch 23 '' Tab 'BackTab'  ### '' is because Mode_switch is a spe
 ### temporary experimental
 ### i do not use any layer very much, except the symbol layer
 ### tapifier ISO_Level3_Shift 66 mod5 Return
-fi
 
 xmodmap -e "clear control"
 xmodmap -e "clear mod1"
@@ -134,7 +135,9 @@ xmodmap -e "keycode 108 = Control_R"
 xmodmap -e "add control = Control_L Control_R"
 xmodmap -e "add mod1 = Alt_L"
 
-tapifier Control_L 64 control Return 108
+tapifier Control_L 64 control Return 108  ### tapifier defeats sticky somehow, i'll take it!
+
+fi
 
 if [ -n "$help" ] ; then
 echo '
