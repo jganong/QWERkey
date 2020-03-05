@@ -6,17 +6,20 @@ This is a shiny new version of QWERKey forked from (https://github.com/MicahElli
 You might want to read the README.md there because I am only going a mention a few changes here.
 ![keymap diagram](https://github.com/jganong/QWERkey/blob/master/keyboard-layout.png)
 
-To install this project, put the script "kb" into any directory in your PATH.
+To install this project, install the "xcape" and "xkbset" packages from your package manager,
+and put the script "baklava" into any directory in your PATH.
 
 To activate it, run "baklava start".  To deactivate it, run "baklava" with no arguments.
 
 All the keys (except CapsLock and Alt) keep working as they normally do without kb.
 
-The Alt keys act as Control keys.
+If you hold down an Alt keys it does the Control modifier.  If you tap on either Alt key you get Enter.
 
-The CapsLock no longer works to lock the caps. It now emits Enter when you tap it, and when 
-you hold down it down, it activates a new modifier I am calling CHARM.
-When CHARM is in effect, it activates a layer where many movement keys are on the right hand.
+The CapsLock no longer works to lock the caps. The CapsLock key now does the Alt modifier.
+If you tap it, the Alt function is latched, so the next key you press will have Alt applied.
+If you double tap it, the Alt mode is locked. Tapping Alt again clears its lock.
+
+Similiarly, the Shift key latches when you tap it, and locks when you double tap it.
 
 When you hold down the Tab key it activates the QRK modifier as before in QWERKey.
 All the QWRK symbols have been moved to the right hand, since the left hand is busy doing modifiers.

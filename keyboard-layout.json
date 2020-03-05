@@ -56,20 +56,15 @@
     },
     "U",
     {
-      "t": "#000000\n\n#008800\n#ff0000\n\n\n\n#008800"
+      "t": "#000000\n\n#008800\n\n\n\n\n#008800"
     },
     "I\n\n*\n\n\n\n\nImpact",
     "O\n\n~\n\n\n\n\nOcean",
     "P\n\n+\n\n\n\n\nPlus",
     "{\n[\n(\n\n\n\n\nopeners",
-    {
-      "t": "#000000\n\n#008800\n\n\n#008888\n\n#008800",
-      "a": 0
-    },
-    "}\n]\n)\n\n\nF12\n\nclosers",
+    "}\n]\n)\n\n\n\n\nclosers",
     {
       "t": "#000000",
-      "a": 4,
       "w": 1.5
     },
     "|\n\\"
@@ -79,7 +74,7 @@
       "t": "#000000\n\n\n\n\n\n\n\n\n\n#0",
       "w": 1.75
     },
-    "\n\n\n\n\n\ndouble locks\n\n\n\nAlt",
+    "\n\n\n\n\n\ndouble locks\n\ntap latches\ndouble locks\nAlt",
     {
       "t": "#000000"
     },
@@ -89,21 +84,20 @@
     "F",
     "G",
     {
-      "t": "#000000\n\n#008800\n#ff0000\n\n\n\n#008800"
+      "t": "#000000\n\n#008800\n\n\n\n\n#008800"
     },
     "H\n\n^\n\n\n\n\nHat",
     {
-      "t": "#000000\n\n\n#ff0000\n\n\n\n#008800"
+      "t": "#000000\n\n\n\n\n\n\n#008800"
     },
     "J\n\n@\n\n\n\n\nJellyroll",
     {
-      "t": "#000000\n\n#008800\n#ff0000\n\n\n\n#008800"
+      "t": "#000000\n\n#008800\n\n\n\n\n#008800"
     },
     "K\n\n=\n\n\n\n\neeKwal",
     "L\n\n|\n\n\n\n\nLine",
     ":\n\n%\n\n\n\n\ndbl.dots",
     {
-      "t": "#000000\n\n#008800\n\n\n\n\n#008800",
       "fa": [
         0,
         0,
@@ -124,16 +118,20 @@
   ],
   [
     {
+      "a": 5,
       "w": 2.25
     },
-    "\n\n\n\n\n\ndouble locks\n\n\n\nShift",
+    "tap latches\nShift\n\n\n\n\ndouble locks",
+    {
+      "a": 4
+    },
     "Z",
     "X",
     "C",
     "V",
     "B",
     {
-      "t": "#000000\n\n#008800\n#ff0000\n\n\n\n#008800",
+      "t": "#000000\n\n#008800\n\n\n\n\n#008800",
       "fa": [
         0,
         0,
