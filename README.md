@@ -1,9 +1,10 @@
-# Baklava Keyboard Layout with Sticky Sweet Keys
+# Baklava Keyboard Layout -- Sweet Layers with Sticky Keys
 
-This is a version of QWERKey forked from (https://github.com/MicahElliott/QWERkey) with the additon of sticky keys from xkbset.
+This is a keyboard layout for X11, optimized for minimal reach, 
+inspired by (https://github.com/MicahElliott/QWERkey) with the additon of sticky keys from xkbset.
 
 The CapsLock key now serves as the Ctrl key.
-All the keys (except CapsLock) work much as they do without kb,
+All the keys (except CapsLock) work much as they do without baklava,
 but with additional superpowers.
 
 One superpower is Sticky keys.
@@ -24,6 +25,9 @@ The other superpower is the Symbol modifier.
 Holdng down the Tab key activates the Symbol modifier,
 and you can get type the symbols shown in green in the keyboard map with your right hand,
 without reaching far from the home row.  This gives all the symbols on a U.S. keyboard within easy reach of the homerow.
+
+In previous versions of baklava, I had separate layers for Movement Keys, Number Keys, and Function Keys, but I found that 
+in practice I rarely used the extra layers, so I eliminated them.
 
 I did not make a binding for Escape,
 because you can do ```Ctrl-[``` to get Escape, or Ctrl-C in vim.
