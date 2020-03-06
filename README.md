@@ -1,4 +1,4 @@
-# Baklava -- Sweet Keyboard Layered Layout with Sticky Keys
+# Baklava -- Sweet Layered Keyboard Layout with Sticky Keys
 
 This is a keyboard layout for X11, optimized for minimal reach, 
 inspired by (https://github.com/MicahElliott/QWERkey) with the additon of sticky keys from xkbset.
