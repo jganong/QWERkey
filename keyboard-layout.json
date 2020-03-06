@@ -71,14 +71,12 @@
   ],
   [
     {
-      "t": "#000000\n#0",
-      "a": 5,
+      "t": "#000000\n\n\n\n\n\n\n\n\n\n#0",
       "w": 1.75
     },
-    "tap latches\nAlt\n\n\n\n\ndbltap locks",
+    "Enter\n\n\n\n\n\n\n\n\n\nCtrl",
     {
-      "t": "#000000",
-      "a": 4
+      "t": "#000000"
     },
     "A",
     "S",
@@ -120,10 +118,10 @@
   ],
   [
     {
-      "a": 5,
+      "a": 0,
       "w": 2.25
     },
-    "tap latches\nShift\n\n\n\n\ndouble tap locks",
+    "tap - next key Shift\n\n\n\ntap again - unlock Shift\n\n2nd tap - lock Shift\n\n\n\nShift",
     {
       "a": 4
     },
@@ -180,10 +178,10 @@
     "?\n\n\\\n\n\n\n/\nslashes",
     {
       "t": "#000000",
-      "a": 5,
+      "a": 0,
       "w": 2.75
     },
-    "tap latches\nShift\n\n\n\n\ndouble tap locks"
+    "tap - next key Shift\n\n\n\ntap again - unlock Shift\n\n2nd tap - lock Shift\n\n\n\nShift"
   ],
   [
     {
@@ -196,12 +194,13 @@
     },
     "",
     {
-      "a": 4,
+      "a": 0,
       "w": 1.25
     },
-    "\n\n\n\n\n\nEnter\n\n\n\nCtrl",
+    "tap latch\n\n\n\ntap unlock\n\n2nd lock\n\n\n\nAlt",
     {
       "t": "#000000\n\n#008800\n\n\n\n\n#008800",
+      "a": 4,
       "fa": [
         2,
         0,
@@ -217,9 +216,11 @@
     "_ {underscore}\n\n{hyphen} -\n\n\n\nSpace\nbreakers",
     {
       "t": "#000000",
+      "a": 0,
+      "f": 3,
       "w": 1.25
     },
-    "\n\n\n\n\n\nEnter\n\n\n\nCtrl",
+    "tap latch\n\n\n\ntap unlock\n\n2nd lock\n\n\n\nAlt",
     {
       "a": 7,
       "w": 1.25
