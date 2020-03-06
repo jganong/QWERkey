@@ -6,20 +6,20 @@ The CapsLock key now serves as the Ctrl key.
 All the keys (except CapsLock) work much as they do without kb,
 but with additional superpowers.
 
-One superpower is Stick keys.
+One superpower is Sticky keys.
 
 The Alt key and the Shift keys are sticky, which means if you tap and release it,
 the next key you press will have modifier applied.
 If you double tap, the modifier mode is locked.
 Tapping it again clears its lock.
 
-All three of these modifiers (Ctrl, Alt, and Shift) can also
-be used the traditional way where you hold down the modifier key & press another key. 
-
-By default "xkbset sticky" makes Alt, Shift, and Ctrl sticky,
+By default "xkbset sticky" also makes Ctrl sticky,
 but I find sticky Ctrl to be annoying,
 so in baklava Ctrl (the one labeled CapsLock) is not sticky. 
 Instead it is set so that a single tap generates Enter.
+
+All three of these modifiers (Ctrl, Alt, and Shift) can also
+be used the traditional way where you hold down the modifier key & press another key. 
 
 The other superpower is the Symbol modifier.  
 
