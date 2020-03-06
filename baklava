@@ -31,7 +31,6 @@ if [ -n "$start" ] ; then
 
 xkbset -bell -feedback sticky -twokey latchlock
 xkbset exp 64 '=sticky' '=twokey' '=latchlock'
-###xkbset ignorelock control
 
 
 xmodmap - <<hereDoc
@@ -75,13 +74,13 @@ keycode 59 = comma less asciicircum F8 NoSymbol 8
 keycode 60 = period greater exclam F9 NoSymbol 9
 keycode 61 = slash question backslash
 keycode 62 = Shift_R Shift_R NoSymbol NoSymbol NoSymbol NoSymbol
-keycode 64 = Control_L
+!keycode 64 = Control_L
 keycode 65 = space underscore minus
-keycode 66 = Alt_L
-keycode 108 = Control_R
+!keycode 66 = Control_R
 !keycode 68 = F2 XF86Switch_VT_2 NoSymbol NoSymbol NoSymbol NoSymbol
 keycode 8 = Tab NoSymbol Tab NoSymbol NoSymbol NoSymbol
 keycode 47 = semicolon colon percent NoSymbol BackSpace NoSymbol
+keycode 108 = Alt_L
 remove lock = Caps_Lock 
 hereDoc
 
@@ -130,12 +129,10 @@ tapifier Mode_switch 23 '' Tab 'BackTab'  ### '' is because Mode_switch is a spe
 
 xmodmap -e "clear control"
 xmodmap -e "clear mod1"
-xmodmap -e "keycode 64 = Control_L"
-xmodmap -e "keycode 108 = Control_R"
 xmodmap -e "add control = Control_L Control_R"
 xmodmap -e "add mod1 = Alt_L"
 
-tapifier Control_L 64 control Return 108  ### tapifier defeats sticky somehow, i'll take it!
+tapifier Control_L 66 control Return ### tapifier defeats sticky somehow, i'll take it!
 
 fi
 
