@@ -3,6 +3,8 @@
 This is a keyboard layout for X11, optimized for minimal reach, 
 inspired by (https://github.com/MicahElliott/QWERkey) with the additon of sticky keys from xkbset.
 
+![keymap diagram](https://github.com/jganong/QWERkey/blob/master/keyboard-layout.png)
+
 The CapsLock key now serves as the Ctrl key.
 All the keys (except CapsLock) work much as they do without baklava,
 but with additional superpowers.
@@ -39,7 +41,7 @@ To activate it, run "baklava start".  To deactivate it, run "baklava" with no ar
 You might want to read the (https://github.com/MicahElliott/QWERkey/README.md) because it motivates baklava.
 That author's motivation was that he cannot reach very far with his fingers,
 to he remapped his keyboard extensively, so that he can type using only keys that are easy to reach, as shown in this image:
- ![keymap diagram](https://github.com/jganong/QWERkey/blob/master/keyboard-layout.png).
+![https://raw.githubusercontent.com/MicahElliott/QWERkey/master/art/real-keyboard.png].
 To me, main idea of QWERKey is that you can hack your way around some health issues.
 For me, the main physical issue is that I have arthritis in my right elbow and left thumb.
 I use Xmonad as my window manager because it is keyboard driven, greatly sparing my elbows from mouse pain.
