@@ -1,4 +1,4 @@
-# Baklava Keyboard Layout -- Sweet Layers with Sticky Keys
+# Baklava -- Sweet Keyboard Layered Layout with Sticky Keys
 
 This is a keyboard layout for X11, optimized for minimal reach, 
 inspired by (https://github.com/MicahElliott/QWERkey) with the additon of sticky keys from xkbset.
@@ -28,9 +28,6 @@ Holdng down the Tab key activates the Symbol modifier,
 and you can get type the symbols shown in green in the keyboard map with your right hand,
 without reaching far from the home row.  This gives all the symbols on a U.S. keyboard within easy reach of the homerow.
 
-In previous versions of baklava, I had separate layers for Movement Keys, Number Keys, and Function Keys, but I found that 
-in practice I rarely used the extra layers, so I eliminated them.
-
 I did not make a binding for Escape,
 because you can do ```Ctrl-[``` to get Escape, or Ctrl-C in vim.
 
@@ -41,7 +38,7 @@ To activate it, run "baklava start".  To deactivate it, run "baklava" with no ar
 You might want to read the (https://github.com/MicahElliott/QWERkey/README.md) because it motivates baklava.
 That author's motivation was that he cannot reach very far with his fingers,
 to he remapped his keyboard extensively, so that he can type using only keys that are easy to reach, as shown in this image:
-![https://raw.githubusercontent.com/MicahElliott/QWERkey/master/art/real-keyboard.png].
+![image of easy reach keys from QWERKey](https://raw.githubusercontent.com/MicahElliott/QWERkey/master/art/real-keyboard.png)
 To me, main idea of QWERKey is that you can hack your way around some health issues.
 For me, the main physical issue is that I have arthritis in my right elbow and left thumb.
 I use Xmonad as my window manager because it is keyboard driven, greatly sparing my elbows from mouse pain.
