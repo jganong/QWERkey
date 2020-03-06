@@ -4,26 +4,28 @@ This is a version of QWERKey forked from (https://github.com/MicahElliott/QWERke
 
 The CapsLock key now serves as the Ctrl key.
 All the keys (except CapsLock) work much as they do without kb,
-but with additional powers.
+but with additional superpowers.
 
-By default "xkbset sticky" makes Alt, Shift, and Ctrl sticky,
-but I find sticky Ctrl to be annoying,
-so in baklava, Ctrl (the one labeled CapsLock) is not sticky. 
-Instead it is set so that a single tap generates Enter.
+One superpower is Stick keys.
 
-The Alt key is sticky, which means if you tap and release it,
-the next key you press will have Alt applied.
-If you double tap, the Alt mode is locked.
-Tapping Alt again clears its lock.
-
-The Shift key is also sticky & latches, locks and unlocks with taps.
+The Alt key and the Shift keys are sticky, which means if you tap and release it,
+the next key you press will have modifier applied.
+If you double tap, the modifier mode is locked.
+Tapping it again clears its lock.
 
 All three of these modifiers (Ctrl, Alt, and Shift) can also
 be used the traditional way where you hold down the modifier key & press another key. 
 
-When you hold down the Tab key it activates the Symbol modifier,
+By default "xkbset sticky" makes Alt, Shift, and Ctrl sticky,
+but I find sticky Ctrl to be annoying,
+so in baklava Ctrl (the one labeled CapsLock) is not sticky. 
+Instead it is set so that a single tap generates Enter.
+
+The other superpower is the Symbol modifier.  
+
+Holdng down the Tab key activates the Symbol modifier,
 and you can get type the symbols shown in green in the keyboard map with your right hand,
-without reaching far from the home row.
+without reaching far from the home row.  This gives all the symbols on a U.S. keyboard within easy reach of the homerow.
 
 I did not make a binding for Escape,
 because you can do ```Ctrl-[``` to get Escape, or Ctrl-C in vim.
