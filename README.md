@@ -26,7 +26,7 @@ and you can get type the symbols shown in green in the keyboard map with your ri
 without reaching far from the home row.
 
 I did not make a binding for Escape,
-because you can do Ctrl-[ to get Escape, or Ctrl-C in vim.
+because you can do ```Ctrl-[``` to get Escape, or Ctrl-C in vim.
 
 To install this project, install the "xcape" and "xkbset" packages from your package manager,
 and put the script "baklava" into any directory in your PATH.
@@ -37,9 +37,10 @@ That author's motivation was that he cannot reach very far with his fingers,
 to he remapped his keyboard extensively, so that he can type using only keys that are easy to reach, as shown in this image:
  ![keymap diagram](https://github.com/jganong/QWERkey/blob/master/keyboard-layout.png).
 To me, main idea of QWERKey is that you can hack your way around some health issues.
-For me, the main physical issue is that I have arthritis in my elbows and thumbs.
+For me, the main physical issue is that I have arthritis in my right elbow and left thumb.
 I use Xmonad as my window manager because it is keyboard driven, greatly sparing my elbows from mouse pain.
 The problem is that the default keybindngs just transfer the wear and tear to my left thumb.
 Xmonad uses stretches like Alt-Shift-6, which was just annoying at first, but
 become quite painful after a couple of years of using Xmonad.
-Having the sticky Alt & Shift keys allow me to press those keys one at a time, thus avoid the stretch.
+This keybinding lets me use might right thumb for Alt, and it is sticky 
+so I can press those keys one at a time, thus avoid the stretch.

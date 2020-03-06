@@ -1,3 +1,9 @@
+the xkbset usually last until the xserver restarts.
+but sometimes (like when you close the lid on my laptop), it seems to clear the setting.
+For me this is no big deal I just issue the command "baklava start' again.
+But this would probably be confusing to anybody using it to get work done,
+so maybe it should be a rule in evdev, or maybe a service in systemd.
+
 perhaps add F1-F9 as Symbol Keys on 1-9.
 
 perhaps add a few movement keys on the 8 keys that are easy to reach with left hand with pinky on tab:
