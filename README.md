@@ -16,8 +16,8 @@ the next key you press will have modifier applied.
 If you double tap, the modifier mode is locked.
 Tapping it again clears its lock.
 
-By default "xkbset sticky" also makes Ctrl sticky, but I find that annoying,
-so in instead it is set so that a single tap on Ctrl (labelled CapsLock)  generates Enter.
+By default "xkbset sticky" also makes Ctrl sticky, but I find that annoying, because it makes the keyboard seem locked,
+so in instead it is set so that a single tap on Ctrl (labelled CapsLock) generates Enter.
 
 All three of these modifiers (Ctrl, Alt, and Shift) can also
 be used the traditional way where you hold down the modifier key & press another key. 
