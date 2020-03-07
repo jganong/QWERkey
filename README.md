@@ -29,7 +29,7 @@ Holdng down the Tab key activates the Symbol modifier, while pressing anohter ke
 so you can get type the symbols shown in green in the keyboard map with your right hand,
 without reaching far from the home row.  This gives all the symbols on a U.S. keyboard within easy reach of the homerow.
 
-If you do an extremely long keypress on Ctrl or Tab, long enough to exceed the xcape timeout,
+If you do an extremely long keypress on Ctrl or Tab, holding the key down long enough to exceed the xcape timeout,
 these keys will latch and lock like Alt and Shift.  Tap them again to clear it.
 
 I did not make a binding for Escape,
