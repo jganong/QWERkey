@@ -9,11 +9,11 @@ The CapsLock key now serves as the Ctrl key.
 All the keys (except CapsLock) work much as they do without baklava,
 but with additional superpowers.
 
-There is a variant called ```baklava.sh``` that is intended run automatically from ```/etc/X11/xinit/xinitrc.d/```
-```baklava.sh``` has some different behaviour than traditional ```baklava`` as desribed in this README.    
-    baklava.sh does not do sticky keys.  sticky keys are confusing unless some visual indicator is added.
+There is a variant called ```baklava.sh``` that is intended run automatically from ```/etc/X11/xinit/xinitrc.d/```. It has some different behaviour than traditional ```baklava``` as desribed in this README. 
 
-    baklava.sh, when run with no args, restarts rather than stops
+```baklava.sh``` does not do sticky keys.  sticky keys are confusing unless some visual indicator is added.
+
+```baklava.sh```, when run with no args, restarts rather than stops
 
 One superpower is Sticky keys.
 
