@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Baklava
+Icon=baklava
+Exec=~/bin/baklava restart
+Categories=Development;GTK;
+StartupNotify=true
+Comment=To autostart baklava in KDE,
+Comment=copy this file to ~/.config/autostart/baklava.desktop
